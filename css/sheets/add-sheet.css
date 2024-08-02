@@ -1,0 +1,46 @@
+.check{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.add-form form .input-split .check input[type="checkbox"]{
+    width: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--red);
+    transition: .3s;
+}
+.add-form form .input-split .check input[type="checkbox"]:checked{
+    background: #32CD32;
+}
+.add-form form .input-split .check input[type="checkbox"]::before{
+    content: "Později upravit";
+    font-size: 14px;
+    color: var(--white);
+    letter-spacing: .5px;
+}
+.add-form form .input-split .check input[type="checkbox"]::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--white);
+    content: "\f00d";
+}
+.add-form form .input-split .check input[type="checkbox"]:checked::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--white);
+    content: "\f00c";
+}
+.add-error.sheet{
+    bottom: -25%;
+}

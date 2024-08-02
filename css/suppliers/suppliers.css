@@ -1,0 +1,29 @@
+.hint.supplier:nth-child(even):hover{
+    background: var(--white);
+    color: var(--black);
+}
+.hint.supplier:nth-child(odd):hover{
+    background: var(--red);
+    color: var(--white);
+}
+.supp-edit-icon{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.supp-edit-icon a{
+    width: 19px;
+    height: 19px;
+}
+.supp-edit-icon a svg{
+    width: 19px;
+    height: 19px;
+}
+.supp-edit-icon a svg path{
+    fill: var(--gray);
+    transition: .2s ease-in;
+}
+.supp-edit-icon a svg path:hover{
+    fill: var(--blue);
+}

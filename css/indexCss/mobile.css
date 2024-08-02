@@ -1,0 +1,356 @@
+@media screen and (max-width: 1040px){
+    /* Index, mobile navbar, mobile header */
+    #header{
+        display: none;
+    }
+    .login-logo{
+        display: none;
+    }
+    #mobile-menu, #mobile-navbar{
+        display: block;
+    }
+    #mobile-menu{
+        position: fixed;
+        width: 100%;
+        height: 10%;
+        background: var(--darkGray);
+        padding: 5% 8% 5% 7%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10;
+    }
+    #mobile-menu .mobile-logo img{
+        width: 55px;
+        height: auto;
+    }
+    #mobile-menu .hamburger{
+        width: 30px;
+        height: 30px;
+        position: relative;
+        cursor: pointer;
+    }
+    #mobile-menu .hamburger .bars, .hamburger::before, .hamburger::after{
+        content: "";
+        width: 100%;
+        height: 3px;
+        background: var(--white);
+        display: block;
+        margin: 5px 0;
+        border-radius: 5px;
+        transition: .3s ease;
+    }
+    #mobile-menu .hamburger.is-active::before{
+        transform: rotate(45deg) translate(40%, -20%);
+    }
+    #mobile-menu .hamburger.is-active::after{
+        transform: rotate(-45deg) translate(40%, 20%);
+    }
+    #mobile-menu .hamburger.is-active .bars{
+        opacity: 0;
+    }
+    #mobile-navbar{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background: var(--darkGray);
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 5;
+        transition: .4s  cubic-bezier(0.9, 0.02, 0.49, 0.95);
+    }
+    #mobile-navbar.is-active{
+        left: 0;
+    }
+    #mobile-navbar .mobile-nav-links{
+        height: 75%;
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .mobile-nav-links a{
+        width: 100%;
+        text-decoration: none;
+        color: var(--white);
+        font-size: 18px;
+        padding: 5%;
+        transition: .2s ease;
+    }
+    .mobile-nav-links a:hover, .mobile-nav-links p:hover{
+        color: var(--red);
+    }
+    .mobile-nav-link p{
+        font-size: 18px;
+        color: var(--white);
+        transition: .2s ease;
+    }
+    .mobile-nav-links a .mobile-nav-link{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .mobile-nav-link svg{
+        height: 25px;
+        width: 40px;
+        margin-right: 15px;
+        transition: .2s ease;
+    }
+    .mobile-nav-link svg path{
+        height: 25px;
+        width: auto;
+    }
+    .mobile-nav-link p{
+        letter-spacing: .5px;
+    }
+    .login-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    .login-wrapper .user-1, .login-wrapper .user-2{
+        width: 100%;
+        height: 50%;
+    }
+    .user-content{
+        height: 100%;
+    }
+    .user-content .user-heading{
+        height: auto;
+    }
+    .user-content .user-heading h2{
+        font-size: 28px;
+    }
+    .user-content .user-heading p{
+        font-size: 14px;
+    }
+    .user-des p{
+        font-size: 12px;
+    }
+
+    /* Login page */
+    .login-img{
+        display: none;
+    }
+    .login-form{
+        width: 100%;
+        padding: 5% 15% 20% 15%;
+    }
+    .login-heading{
+        height: 25%;
+    }
+    .login-heading .login-sub{
+        font-size: 14px;
+    }
+    .login-form form input[type="submit"]{
+        height: auto;
+    }
+    .login-form form input[type="text"], .login-form form input[type="password"]{
+        font-size: 12px;
+    }
+    .login-form{
+        justify-content: space-evenly;
+    }
+    .login-form form{
+        height: 60%;
+    }
+    .login-err{
+        font-size: 14px;
+    }
+    .logout{
+        width: 100%;
+    }
+    .logout form{
+        padding: 5%;
+    }
+
+    /* Readonly page */
+    .login-wlcm .wlcm-mess .wlcm-heading{
+        font-size: 24px;
+        line-height: auto;
+        line-height: 35px;
+    }
+    .login-wlcm{
+        padding: 5% 10%;
+    }
+    .login-wlcm .wlcm-mess .wlcm-sub{
+        font-size: 14px;
+    }
+    .btns{
+        grid-template-columns: unset;
+        height: 40%;
+        overflow-y: scroll;
+    }
+    .btns::-webkit-scrollbar, .parameters::-webkit-scrollbar{
+        width: 0px;
+    }
+
+    /* Data pages */
+    .container{
+        justify-content: space-around;
+    }
+    main{
+        justify-content: flex-end;
+    }
+    .container .arrow-back-link{
+        display: none;
+    }
+    .container .arrow-back{
+        font-size: 28px;
+    }
+    .search-container, .result-wrapper{
+        width: 80%;
+    }
+    .search-container{
+        height: 30%;
+    }
+    .search-btn{
+        display: none;
+    }
+    .search-container form .search-input{
+        width: 100%;
+    }
+    .heading{
+        font-size: 18px;
+    }
+    .search-container .heading a{
+        height: 30px;
+        width: 30px;
+    }
+    .search-container .heading a .add-plus{
+        height: 30px;
+        width: 30px;
+    }
+    .parameters{
+        overflow-x: scroll;
+        justify-content: unset;
+    }
+    #result{
+        font-size: 14px;
+    }
+    .hint{
+        min-width: 100vw;
+    }
+    .search-container form .search-input input{
+        font-size: 14px;
+    }
+    .result-wrapper{
+        height: 60%;
+    }
+    .parameters .sort p{
+        width: 30%;
+    }
+    .parameters{
+        gap: 30px;
+    }
+    .results p{
+        width: 30%;
+    }
+    .results{
+        gap: 30px;
+    }
+    .result{
+        height: 90%;
+    }
+    .parameters .sort{
+        width: auto;
+    }
+    .parameters .sort p{
+        width: 100%;
+    }
+
+    /* Add pages */
+    .add-section{
+        width: 80%;
+        height: 100%;
+        justify-content: flex-start;
+    }
+    .add-form p{
+        width: 100%;
+    }
+    .add-form form{
+        width: 100%;
+    }
+    .add-form .add-error{
+        position: relative;
+        bottom: 5%;
+    }
+    .add-form form input{
+        font-size: 12px;
+    }
+    .add-section .heading.add h1{
+        display: none;
+    }
+    .add-form form .input-split .check input[type="checkbox"]::before{
+        font-size: 12px;
+    }
+    .add-form.mat{
+        justify-content: space-evenly;
+    }
+    .row-dir{
+        width: 100%;
+    }
+    .add-form .add-error.mat{
+        bottom: -5%;
+    }
+    .add-form.f{
+        width: 100%;
+    }
+    .add-form.f form.comp{
+        width: 100%;
+    }
+
+    /* Detail pages */
+    .detail-container .arrow-back-link{
+        display: none;
+    }
+    .detail-name h1{
+        font-size: 26px;
+    }
+    .detail-info, .detail-materials{
+        width: 80%;
+    }
+    .result-wrapper.project-detail .result{
+        height: 60%;
+    }
+    .detail-name h2{
+        font-size: 20px;
+    }
+    .detail-heading .detail-edit a .edit-icon{
+        width: 30px;
+        height: 30px;
+    }
+    .table-heading h2{
+        font-size: 24px;
+    }
+    .detail-des p{
+        font-size: 16px;
+    }
+    .detail-materials.split{
+        flex-direction: column;
+        width: 80%;
+    }
+    .section-1, .section-2{
+        width: 100%;
+        justify-content: space-around;
+        height: 100%;
+    }
+    .result-wrapper.project-detail .result .hint{
+        min-width: unset;
+    }
+    .result-wrapper.project-detail{
+        height: 80%;
+    }
+
+}
+@media screen and (min-width: 768px) and (max-width: 1040px){
+    .hint{
+        min-width: auto;
+    }
+}

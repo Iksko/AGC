@@ -1,0 +1,199 @@
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.search-container, .result-wrapper{
+    width: 50%;
+}
+.search-container{
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.heading{
+    font-size: 24px;
+    color: var(--white);
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+.search-container form{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.search-container form .search-input{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    position: relative;
+}
+.search-container form .search-btn{
+    width: 20%;
+}
+.search-container form .search-input input{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+}
+.search-container form .search-btn input{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    background: var(--red);
+    color: var(--white);
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+.search-container form .search-btn input:hover{
+    background: var(--blue);
+}
+.search-container form .search-input svg{
+    position: absolute;
+    fill: var(--black);
+    right: 3%;
+    font-size: 22px;
+}
+.search-container .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-container .heading a{
+    width: 38px;
+    height: 38px;
+}
+.search-container .heading a .add-plus{
+    width: 38px;
+    height: 38px;
+    padding: 5px;
+    background: var(--white);
+    border-radius: 50%;
+    transition: .2s ease-in;
+}
+.search-container .heading a .add-plus path{
+    fill: var(--gray);
+}
+.search-container .heading a .add-plus:hover{
+    background: var(--red);
+}
+.num-of-records p{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+}
+.result-wrapper{
+    height: 70%;
+    color: var(--white);
+}
+.parameters{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20px;
+    border-bottom: 3px solid var(--white);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.parameters p{
+    width: 25%;
+    text-align: center;
+}
+.parameters .sort{
+    display: flex;
+    width: 25%;
+    justify-content: center;
+}
+.parameters .sort p{
+    width: auto;
+}
+.parameters .sort p a{
+    text-decoration: none;
+    color: var(--white);
+}
+.parameters .sort svg{
+    margin-right: 10px;
+}
+.result{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+    height: 93%;
+}
+.result::-webkit-scrollbar{
+    width: 0;
+}
+.results{
+    display: flex;
+    width: 100%;
+    padding: 13px 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+.result{
+    padding-top: 15px;
+}
+.result .hint{
+    text-decoration: none;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+}
+.hint:nth-child(odd){
+    background: var(--red);
+    color: var(--white);
+}
+.hint:nth-child(even){
+    background: var(--white);
+    color: var(--black);
+}
+.results p{
+    letter-spacing: 0.5px;
+    text-align: center;
+    width: 25%;
+    font-weight: 500;
+}
+.hint:nth-child(odd):hover{
+    /* background: linear-gradient(90deg, rgba(32,32,32,1) 0%, rgba(51,68,141,1) 15%, rgba(51,68,141,1) 85%, rgba(32,32,32,1) 100%); */
+    /* background: linear-gradient(90deg, rgba(21,21,21,1) 0%, rgba(51,68,141,1) 15%, rgba(51,68,141,1) 85%, rgba(21,21,21,1) 100%); */
+    background: var(--blue);
+    color: var(--white);
+}
+.hint:nth-child(even):hover{
+    /* background: linear-gradient(90deg, rgba(32,32,32,1) 0%, rgba(51,68,141,1) 15%, rgba(51,68,141,1) 85%, rgba(32,32,32,1) 100%); */
+    /* background: linear-gradient(90deg, rgba(21,21,21,1) 0%, rgba(51,68,141,1) 15%, rgba(51,68,141,1) 85%, rgba(21,21,21,1) 100%); */
+    background: var(--blue);
+    color: var(--white);
+}
+.container .arrow-back-link{
+    position: absolute;
+    top: 9%;
+    left: 15%;
+}
+.container .arrow-back:hover{
+    fill: var(--red);
+}
+.container .arrow-back{
+    font-size: 32px;
+    transition: .2s ease-in;
+}

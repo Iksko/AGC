@@ -1,0 +1,21 @@
+@import url(./setup.css);
+@import url(./nav.css);
+@import url(./indexCss/index.css);
+@import url(./indexCss/index.css);
+
+@import url(./project/projects.css);
+@import url(./sheets/sheets.css);
+@import url(./materials/materials.css);
+@import url(./components/components.css);
+@import url(./suppliers/suppliers.css);
+
+@import url(./project/projects-detail.css);
+@import url(./materials/material-detail.css);
+@import url(./components/components-detail.css);
+
+@import url(./materials/add-material.css);
+@import url(./project/add-project.css);
+@import url(./sheets/add-sheet.css);
+@import url(./components/add-compoment.css);
+
+@import url(./indexCss/mobile.css);

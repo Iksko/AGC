@@ -1,0 +1,71 @@
+.add-section.f{
+    height: 80%;
+}
+.add-form.f{
+    width: 70%;
+}
+.component-inputs{
+    height: 80%;
+    width: 100%;
+    gap: 20px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+.add-form.f p{
+    width: 100%;
+}
+.add-form.f form{
+    width: 100%;
+}
+.add-form.f form .component-inputs::-webkit-scrollbar{
+    width: 0px;
+}
+.add-form.f form .component-input .componentCASf{
+    width: 70%;
+}
+.component-input{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+.add-component-arrays{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.add-component-arrays svg{
+    width: 38px;
+    height: 38px;
+    background: var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px;
+    transition: .2s ease-in;
+}
+.add-component-arrays svg:hover{
+    background: var(--red);
+}
+.add-component-arrays svg path{
+    fill: var(--gray);
+}
+#scroll-down-icon{
+    background: none;
+}
+#scroll-down-icon path{
+    fill: var(--white);
+}
+.add-form.f form.comp{
+    height: 85%;
+}
+.add-form.f .non-ex-mat-info{
+    color: var(--white);
+    font-weight: 500;
+    font-size: 16px;
+}
+.add-form.f .comp-success{
+    color: var(--white);
+    font-weight: 600;
+    font-size: 18px;
+}

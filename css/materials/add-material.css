@@ -1,0 +1,199 @@
+.materialCheckbox{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.materialCheckbox input{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+}
+.materialCheckbox input:checked{
+    accent-color: var(--red);
+}
+.add-section.mat{
+    height: 85%;
+}
+.row-dir{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 150%;
+}
+.add-form .row-dir .form-heading{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.add-form.mat .row-dir form{
+    width: 100%;
+    justify-content: flex-start;
+}
+.row-dir .result-wrapper{
+    width: 100%;
+}
+.row-dir .result-wrapper.mat{
+    height: 50%;
+}
+.row-dir .mat-found{
+    height: 15%;
+}
+.add-form.mat .parameters.mat p{
+    color: var(--white);
+    font-size: 16px;
+    letter-spacing: .5px;
+    text-align: center;
+    font-weight: 600;
+}
+.parameters.mat .contain{
+    padding: 13px 0;
+}
+.add-form.mat .parameters.mat{
+    padding: 0;
+    gap: 20px;
+}
+.search-input.mat{
+    position: relative;
+}
+.search-input.mat input{
+    width: 100%;
+}
+.search-input.mat svg{
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    width: 20px;
+    height: 20px;
+}
+.search-input.mat svg path{
+    fill: var(--gray);
+}
+.hint.mat{
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    height: 45px;
+}
+.hint.mat:hover{
+    background: var(--gray);
+}
+.hint.mat .results.mat{
+    width: 50%;
+    padding: 13px 20px;
+    background: var(--red);
+    border-radius: 10px;
+    height: 100%;
+}
+.result.mat{
+    padding-top: 10px;
+    height: 100%;
+}
+.hint.mat .results.mat p{
+    text-align: center;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+}
+.hint.mat .materialCheckbox{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+.parameters.mat .sort{
+    width: 50%;
+    padding: 13px 0;
+}
+.hint.mat .materialCheckbox input{
+    width: 100%;
+    height: 100%;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--red);
+    transition: .3s;
+}
+.hint.mat .materialCheckbox input::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--white);
+    content: "\f00d";
+}
+.hint.mat .materialCheckbox input:checked{
+    background: #32CD32;
+}
+.hint.mat .materialCheckbox input:checked::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--white);
+    content: "\f00c";
+}
+.inv-result{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+}
+.inv-result:has(> .hint.mat){
+    height: 100%;
+    margin-bottom: 15px;
+}
+.inv-result::-webkit-scrollbar{
+    width: 0px;
+}
+.inv-result .hint.mat:first-child{
+    margin-top: 10px;
+}
+#myForm{
+    height: auto;
+}
+.form-heading.use{
+    margin-top: 50px;
+}
+.add-success.mat{
+    font-size: 28px;
+    color: var(--white);
+    font-weight: 600;
+}
+.row-dir input[type="submit"]{
+    height: 50px;
+    outline: none;
+    border: none;
+    background: var(--red);
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 18px;
+    letter-spacing: .5px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 100px;
+    transition: .3s ease-in;
+    padding: 13px 20px;
+}
+.row-dir input[type="submit"]:hover{
+    background: var(--blue);
+}
+.add-form.mat .use-form{
+    gap: 0px;
+}
+.add-form.mat{
+    justify-content: flex-start;
+}
+.add-section.mat.sec{
+    justify-content: flex-start;
+}
+.row-dir.mat{
+    justify-content: center;
+}
+.add-error.mat{
+    bottom: 0%;
+}

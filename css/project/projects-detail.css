@@ -1,0 +1,90 @@
+.detail-container{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.detail-info, .detail-materials{
+    width: 50%;
+}
+.detail-materials{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.detail-info{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.result-wrapper.project-detail{
+    width: 100%;
+    height: 80%;
+}
+.detail-name h1{
+    color: var(--white);
+    font-size: 58px;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+}
+.detail-name h2{
+    color: var(--red);
+    font-size: 28px;
+    letter-spacing: 0.5px;
+}
+.detail-des p{
+    font-size: 18px;
+    color: var(--white);
+    line-height: 25px;
+    font-weight: 500;
+}
+.table-heading h2{
+    font-weight: 800;
+    color: var(--white);
+    font-size: 32px;
+    letter-spacing: 0.5px;
+}
+.detail-records p{
+    font-size: 16px;
+    color: var(--white);
+    font-weight: 500;
+}
+.detail-container .arrow-back-link{
+    position: absolute;
+    top: 9%;
+    left: 15%;
+}
+.detail-container .arrow-back:hover{
+    fill: var(--red);
+}
+.detail-container .arrow-back{
+    font-size: 32px;
+    transition: .2s ease-in;
+}
+.detail-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.detail-heading .detail-edit a .edit-icon{
+    width: 38px;
+    height: 38px;
+    padding: 5px 5px 5px 10px;
+    background: var(--white);
+    border-radius: 50%;
+    transition: .2s ease-in;
+}
+.detail-heading .detail-edit a .edit-icon path{
+    fill: var(--gray);
+}
+.detail-heading .detail-edit a{
+    width: 38px;
+    height: 38px;
+}
+.detail-heading .detail-edit a .edit-icon:hover{
+    background: var(--red);
+}
